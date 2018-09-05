@@ -18,7 +18,6 @@ end
 
 tar_extract node['dotnetcore']['package']['tar'] do
   target_dir '/opt/dotnet'
-  creates '/opt/dotnet/dotnet'
 end
 
 link '/usr/bin/dotnet' do
